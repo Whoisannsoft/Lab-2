@@ -1,0 +1,59 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-left: 5rem;
+  gap: 0.8rem;
+}
+
+:host {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  color: white;
+  padding: 10px 15px;
+  width: 200px;
+  height: 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: rgb(28, 186, 207);
+  box-shadow: 0 0 10px rgba(28, 186, 207, 0.5);
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(28, 186, 207);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  & svg {
+    fill: white;
+  }
+}
+
+button svg {
+    width: 25px; /* Tamaño adecuado del icono */
+    height: 25px;
+    fill: rgb(28, 186, 207); /* Color del icono */
+  }
