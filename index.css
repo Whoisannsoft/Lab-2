@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.card-container{
+    display: grid;
+    padding: 5rem;
+    padding-top: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 1rem;
+    background-color: black;
+}
+
+.news-container{
+    display: grid;
+    padding: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    background-color: black;
+}
+
+#latest-news{
+    color: white;
+    padding-left: 5rem;
+}
+
+footer{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(7, 13, 19);
+    color: white;
+}
