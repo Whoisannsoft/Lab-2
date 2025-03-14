@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components | Sofia Gonzales</title>
+  </head>
+  <body>
+    <div id="app">
+      <header-component></header-component>
+      <x-search></x-search>
+      <div class="card-container">
+        <card-component 
+          card-title="Se corre la Copa Pistón"
+          card-text="El día de hoy se corre la final de la Copa Pistón en el circuito de Radiator Springs. Rayo McQueen y Jackson Storm se enfrentan en una carrera que definirá al campeón de la temporada."
+          card-image="/src/assets/img/piston-cup.webp">
+        </card-component>
+        <card-component 
+          card-title="Tributo a Soda Stereo"
+          card-text="La banda tributo a Soda Stereo se presentará en el estadio de River Plate para dar un concierto tributo a Gustavo Cerati. La banda tocará sus mejores éxitos y contará con la participación de artistas invitados."
+          card-image="/src/assets/img/soda.jpeg">
+        </card-component>
+        <card-component 
+          card-title="Top lenguajes de programación en 2025"
+          card-text="Según un estudio de la empresa TIOBE, los lenguajes de programación más populares en 2025 serán Python, JavaScript y Java. Estos lenguajes se mantendrán en el top 3 debido a su versatilidad y facilidad de uso."
+          card-image="/src/assets/img/programming.png">
+        </card-component>
+        <card-component 
+          card-title="Concierto de Maluma en Cali"
+          card-text="El cantante colombiano Maluma se presentará en el estadio Pascual Guerrero de Cali para dar un concierto en el marco de su gira mundial. El concierto contará con la participación de artistas invitados y promete ser un espectáculo inolvidable."
+          card-image="/src/assets/img/maluma.png">
+        </card-component>
+      </div>
+      <h1 id="latest-news">Latest News</h1>
+      <div class="news-container">
+        <news-component
+          new-title="Se corre la Copa Pistón"
+          new-text="Las últimas noticias del mundo de las carreras de autos. Rayo McQueen y Jackson Storm se enfrentan en la final de la Copa Pistón."
+          new-author="Sofia"
+          new-date="Hace 2 horas">
+        </news-component>
+        <news-component
+          new-title="Álvaro Díaz lanza nuevo sencillo"
+          new-text="El cantante puertorriqueño Álvaro Díaz lanza su nuevo sencillo 'Dímelo' en todas las plataformas digitales. La canción promete ser un éxito y ya cuenta con miles de reproducciones en Spotify."
+          new-author="AdrianCCRS"
+          new-date="Ayer">
+        </news-component>
+        <news-component
+          new-title="Real Madrid gana al Atlético de Madrid"
+          new-text="El Real Madrid se impone al Atlético de Madrid en el derbi madrileño con un marcador de 2-1. Los goles del Real Madrid fueron anotados por Karim Benzema y Vinicius Jr, mientras que el gol del Atlético fue obra de Antoine Griezmann."
+          new-author="ESPN"
+          new-date="10/03/2025">
+        </news-component>
+        <news-component
+          new-title="Halo Infinite ya está disponible"
+          new-text="El esperado videojuego de la saga Halo ya está disponible en todas las plataformas. Los fans de la franquicia podrán disfrutar de una nueva aventura en la que el Jefe Maestro deberá enfrentarse a nuevos enemigos y desafíos."
+          new-author="Xbox"
+          new-date="09/03/2025">
+        </news-component>
+      </div>
+
+      <dial-component num-dials="10"></dial-component>
+      <footer>
+        <p>&copy; 2025 Sofia Gonzales</p>
+      </footer>
+      <script type="module" src="/src/index.js"></script>
+    </div>
+  </body>
+</html>
